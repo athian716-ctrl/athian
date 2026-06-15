@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SDG 8 — Decent Work & Economic Growth</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>SDG 8: Decent Work & Economic Growth</h1>
+        <p class="tagline">Highlighting a problem and a practical, code-driven solution</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>The Problem</h2>
+        <p>
+          Youth unemployment and underemployment reduce economic opportunity
+          and create long-term social costs. Many job seekers lack clear
+          pathways to upskill and connect with employers.
+        </p>
+      </section>
+
+      <section class="solution">
+        <h2>Proposed Solution</h2>
+        <p>
+          A simple, accessible portal that connects local employers to skilled
+          youth through curated training resources and a lightweight matching
+          interface. This static demo shows the concept, messaging, and
+          onboarding flow using plain HTML and CSS.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Train</h3>
+            <p>Curated micro-courses and skill badges to prepare candidates.</p>
+          </article>
+          <article class="card">
+            <h3>Match</h3>
+            <p>Simple filters let employers find candidates by skill and location.</p>
+          </article>
+          <article class="card">
+            <h3>Place</h3>
+            <p>Short internship & apprenticeship pathways lead to stable jobs.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="how-to">
+        <h2>How this demo is built</h2>
+        <ol>
+          <li>Static HTML structure for accessibility and performance.</li>
+          <li>Responsive CSS for mobile-first layout and readability.</li>
+          <li>Optional: add a small JS layer to filter and simulate matches.</li>
+        </ol>
+      </section>
+
+      <section class="callout">
+        <h2>Try it locally</h2>
+        <p>Open <strong>index.html</strong> in your browser to preview the site.</p>
+      </section>
+
+      <section class="demo">
+        <h2>Live Demo — Candidate Match (client-side)</h2>
+        <p>Use the filters to find candidates by skill and location.</p>
+
+        <div class="filters">
+          <label>
+            Skill
+            <select id="skillFilter">
+              <option value="">Any</option>
+              <option value="web">Web Development</option>
+              <option value="data">Data Analysis</option>
+              <option value="design">Design</option>
+              <option value="sales">Sales</option>
+            </select>
+          </label>
+
+          <label>
+            Location
+            <input id="locationFilter" placeholder="e.g., Nairobi, Lagos" />
+          </label>
+
+          <div class="filter-actions">
+            <button id="applyFilter">Apply</button>
+            <button id="resetFilter" class="muted">Reset</button>
+          </div>
+        </div>
+
+        <div id="candidates" class="candidate-list" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>SDG 8 demo — built with HTML & CSS • © Project</p>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
